@@ -74,6 +74,14 @@ class Book extends LibraryItem with Borrowable {
     this.description,
   });
 
+  /// Placeholder for a book about which nothing is known.
+  const Book.missing()
+      : pages = 0,
+        author = const Author(name: 'Unknown'),
+        genre = Genre.unknown,
+        description = null,
+        super(title: 'Unknown', year: 0);
+
   /// Factory constructor that safely parses raw Map data.
   /// Handles incomplete entries gracefully with sensible defaults.
   factory Book.fromJson(Map<String, dynamic> json) {
