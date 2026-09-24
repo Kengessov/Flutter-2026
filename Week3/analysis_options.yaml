@@ -1,0 +1,8 @@
+# Slide 35: switches on flutter_lints, including prefer_const_constructors —
+# the lint that flags widgets 1-2 of "Question 5" (no const, not final).
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true

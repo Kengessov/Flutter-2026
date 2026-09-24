@@ -1,0 +1,32 @@
+name: profile_screen
+description: "Practice 3 — My Profile Screen (Flutter I, Lecture 3)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Slide 35: the standard lint set behind `dart analyze`.
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Slide 24: "in a folder AND listed here — both, or they do not exist."
+  assets:
+    - assets/images/profilescreen.jpg
+
+  # Slide 23-24: font family declared here, referenced by name in code
+  # (see profile_header.dart, fontFamily: 'MyProfileFont').
+  fonts:
+    - family: MyProfileFont
+      fonts:
+        - asset: assets/fonts/Nunito-Regular.ttf
